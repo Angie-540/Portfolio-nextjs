@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
-import { useInView } from 'framer-motion'
+import { useInView, useMotionValue, useSpring } from 'framer-motion'
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null);
@@ -13,7 +13,26 @@ const AnimatedNumbers = ({value}) => {
 
     const springValue = useSpring(motionValue, {duration: 3000})
 
-    const isInView = useInView;
+    const isInView = useInView({ref});
+
+    useEffect(() => {
+        if(isInView) {
+            motionValue.set(value);
+        }
+      
+    }, [isInView, value, motionValue] )
+
+    useEffect(() => {
+            springValue.on("change", (latest) => {
+                if(ref.current && latest.toFixed(0) <= value) {
+                    ref.current.textContent = latest.toFixed(0);
+                }
+                
+            } )
+
+    }, [springValue, value] )
+
+
 
     return <span ref={ref} ></span>
 
@@ -65,7 +84,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
                     
                     <div className='flex flex-col items-end justify-center' >
                         <span className='inline-block text-7xl font-bold'  >
-                            50+
+                            <AnimatedNumbers vlaue={50} />+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75' >satisfied clients</h2>
                     </div>
