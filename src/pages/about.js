@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
+import Skills from '@/components/Skills'
 
 const AnimatedNumbers = ({value}) => {
     const ref = useRef(null);
@@ -13,7 +14,7 @@ const AnimatedNumbers = ({value}) => {
 
     const springValue = useSpring(motionValue, {duration: 3000})
 
-    const isInView = useInView({ref});
+    const isInView = useInView(ref, {once: true});
 
     useEffect(() => {
         if(isInView) {
@@ -31,7 +32,6 @@ const AnimatedNumbers = ({value}) => {
             } )
 
     }, [springValue, value] )
-
 
 
     return <span ref={ref} ></span>
@@ -84,25 +84,27 @@ every project I work on. I look forward to the opportunity to bring my skills an
                     
                     <div className='flex flex-col items-end justify-center' >
                         <span className='inline-block text-7xl font-bold'  >
-                            <AnimatedNumbers vlaue={50} />+
+                            <AnimatedNumbers value={50} />+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75' >satisfied clients</h2>
                     </div>
                     <div className='flex flex-col items-end justify-center' >
                         <span className='inline-block text-7xl font-bold' >
-                            40+
+                            <AnimatedNumbers value={40} /> +
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75' >projects completed</h2>
                     </div>
                     <div className='flex flex-col items-end justify-center' >
                         <span className='inline-block text-7xl font-bold' >
-                            4+
+                        <AnimatedNumbers value={4} /> +
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75' >years of experience</h2>
                     </div>
                 </div>
 
             </div>
+
+            <Skills />
             </Layout>
         </main>
 
