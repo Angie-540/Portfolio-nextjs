@@ -14,7 +14,7 @@ const Footer = () => {
                     <span className='text-primary dark:text-primaryDark text-2xl px-1'>&#9825;</span> 
                     by&nbsp;<Link href="https://devdreaming.com" className='underline
                     uderline -offset-2 
-                    ' target={"_blank"}>CodeBucks</Link>
+                    ' target={"_blank"}>Janice</Link>
                 </div>
                 <Link href="https://devdreaming.com" target={"_blank"}
                 className="underline

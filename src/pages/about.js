@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/Angie.jpeg";
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -62,8 +62,8 @@ const about = () => {
                     className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'
                     >Biography </h2>
                     <p className="font-medium" >
-                    Hi I am CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
+                    Hello, I am Janice, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
+and user-centered digital experiences. With 2 years of experience in the field. I am always looking for 
 new and innovative ways to bring my clients visions to life.
                     </p>
 
@@ -99,7 +99,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
                     <div className='flex flex-col items-end justify-center xl:items-center' >
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl
                         xs:text-4xl'  >
-                            <AnimatedNumbers value={50} />+
+                            <AnimatedNumbers value={10} />+
                         </span>
                         <h2 
                         className='text-xl font-medium capitalize text-dark/75 dark 
@@ -109,7 +109,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
                     <div className='flex flex-col items-end justify-center xl:items-center' >
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl
                         xs:text-4xl' >
-                            <AnimatedNumbers value={40} /> +
+                            <AnimatedNumbers value={10} /> +
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 
                         dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm' 
@@ -118,7 +118,7 @@ every project I work on. I look forward to the opportunity to bring my skills an
                     <div className='flex flex-col items-end justify-center xl:items-center' >
                         <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl
                         xs:text-4xl' >
-                        <AnimatedNumbers value={4} /> +
+                        <AnimatedNumbers value={2} /> +
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
                         xl:text-center md:text-lg sm:text-base xs:text-sm'

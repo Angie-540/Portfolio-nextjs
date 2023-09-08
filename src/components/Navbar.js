@@ -161,7 +161,8 @@ const NavBar = () => {
                   <TwitterIcon />
                 </motion.a>
 
-                <motion.a href="/" target={"_blank"}  
+                <motion.a 
+                href="https://github.com/Angie-540?tab=repositories" target={"_blank"}  
                 className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1' 
                  whileHover={{y:-2}}
                  whileTap={{scale:0.9}}
