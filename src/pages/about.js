@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
-import profilePic from "../../public/images/profile/Angie.jpeg";
+import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -45,7 +45,7 @@ const about = () => {
     return (
         <>
         <Head>
-            <title>CodeBucks | About  Page</title>
+            <title>Portfolio | About  Page</title>
             <meta name="description" context="any description" />
         </Head>
         <main className='flex w-full flex-col items-center justify-center dark:text-light '>
@@ -62,7 +62,7 @@ const about = () => {
                     className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'
                     >Biography </h2>
                     <p className="font-medium" >
-                    Hello, I am Janice, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
+                    Hello, I am James, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
 and user-centered digital experiences. With 2 years of experience in the field. I am always looking for 
 new and innovative ways to bring my clients visions to life.
                     </p>
