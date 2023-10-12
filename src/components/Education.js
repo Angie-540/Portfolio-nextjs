@@ -7,7 +7,7 @@ const Details = ({type, time, place, info}) => {
     const ref = useRef(null);
 
     return <li ref={ref}
-    className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-cneter 
+    className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center 
     justify-between md:w-[80%]' >
         <LiIcon reference={ref} />
         
@@ -40,8 +40,8 @@ const Education = () => {
     )
 
     return (
-        <div className='my-64'>
-            <h2 className='font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl
+        <div className='my-54'>
+            <h2 className='font-bold text-7xl mb-20 w-full text-center md:text-6xl xs:text-4xl
             md:mb-16'
             >Education</h2>
         
