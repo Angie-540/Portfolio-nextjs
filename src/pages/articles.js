@@ -109,7 +109,7 @@ const articles = () => {
     return (
         <>
           <Head>
-            <title>CodeBucks | Articles  Page</title>
+            <title> Articles  Page</title>
             <meta name="description" context="any description" />
         </Head>
 
