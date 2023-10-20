@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/evara.png"
+import project2 from "../../public/images/projects/Portfolio.png"
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -131,7 +132,7 @@ const projects = () => {
             <Layout className='pt-16'>
                 <AnimatedText 
                 text="Imagination Trumps Knowledge!"
-                className='mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
+                className='mb-16 !text-5xl lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-4xl' />
                 
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 
                 md:gap-y-24 sm:gap-x-0'>
@@ -139,7 +140,7 @@ const projects = () => {
                         <FeaturedProject 
                         title="Ecommerce Project"
                         img={project1}
-                       summary=" An ecommerce website using Javascript,HTML and CSS. 
+                       summary=" A static ecommerce website built using Javascript,HTML and CSS. 
                         It shows details regarding the general outlook of a sample ecommerce website.
                         You can easily shop online using this website."
                         link="https://rad-kitten-f0390e.netlify.app/"
@@ -150,16 +151,16 @@ const projects = () => {
 
                     <div className='col-span-6 sm:col-span-12'>
                     <Project 
-                        title="Crypto Screener Application"
-                        img={project1}
-                       summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency."
-                        link="/"
+                        title="Sample POrtfolio"
+                        img={project2}
+                       summary=" A sample porftolio website using Javascript, HTML and CSS. 
+                        It shows various pages included in a sample portfolio."
+                        link="https://resilient-boba-d6671b.netlify.app"
                         type="Featured Project"
                         github="/"
                         />
                     </div>
+                    
                     <div className='col-span-6 sm:col-span-12'>
                     <Project 
                         title="Crypto Screener Application"
