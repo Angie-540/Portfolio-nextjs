@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/evara.png"
 import project2 from "../../public/images/projects/Portfolio.png"
+import project3 from "../../public/images/projects/password-manager.png"
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -151,7 +152,7 @@ const projects = () => {
 
                     <div className='col-span-6 sm:col-span-12'>
                     <Project 
-                        title="Sample POrtfolio"
+                        title="Sample Portfolio"
                         img={project2}
                        summary=" A sample porftolio website using Javascript, HTML and CSS. 
                         It shows various pages included in a sample portfolio."
@@ -163,12 +164,12 @@ const projects = () => {
                     
                     <div className='col-span-6 sm:col-span-12'>
                     <Project 
-                        title="Crypto Screener Application"
-                        img={project1}
+                        title="Password Manager"
+                        img={project3}
                        summary=" A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                         local currency."
-                        link="/"
+                        link="https://tangerine-kleicha-830b03.netlify.app/"
                         type="Featured Project"
                         github="/"
                         />
@@ -186,6 +187,7 @@ const projects = () => {
                         github="/"
                         />
                     </div>
+                    
                     <div className='col-span-6 sm:col-span-12'>
                     <Project 
                         title="Crypto Screener Application"
