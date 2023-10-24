@@ -1,1 +1,1 @@
-Worked on this with next.js
+Worked on this with next.js, tailwind css
